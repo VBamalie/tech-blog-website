@@ -15,6 +15,10 @@ Comment.init(
             type: DataTypes.STRING,
             allowNull: false,
           },
+          content: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
           starting_date: {
             type: DataTypes.DATE,
             allowNull: false,
@@ -26,7 +30,7 @@ Comment.init(
               key: 'id',
             }
           },
-          use_id: {
+          user_id: {
             type: DataTypes.INTEGER,
             references: {
               model: 'user',
